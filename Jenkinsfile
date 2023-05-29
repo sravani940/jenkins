@@ -1,5 +1,11 @@
 pipeline {
-    agent any
+
+     agent {
+        node {
+            label 't058-runner'
+        }
+    }
+
 
     stages {
         stage('Hello') {
